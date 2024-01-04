@@ -20,24 +20,12 @@ import java.util.stream.Collectors;
  * @author emmanueladam
  * */
 public class UserAgent extends GuiAgent {
-    /**list of products to repair*/
+    /*list of products to repair/
     List<Product> products;
-    /**general skill of repairing*/
+    /*general skill of repairing/
     int skill;
-    /**gui window*/
+    /*gui window/
     UserAgentWindow window;
-
-    /**private LocalDate DatePlusProche() {
-        if (proposals.isEmpty()) {
-            return null;
-        }
-        LocalDate now = LocalDate.now();
-
-        // Trouvez la date la plus proche parmi les propositions
-        return proposals.values().stream()
-                .min(Comparator.comparingLong(date -> ChronoUnit.DAYS.between(now, date)))
-                .orElse(null);
-    }**/
 
     private LocalDate extract(String content) {
         // Cette fonction permet d'extraire la date proposée à partie du message reçu de la part du Repaire Coffee
@@ -132,7 +120,7 @@ public class UserAgent extends GuiAgent {
 
     }
 
-    /**the window sends an evt to the agent*/
+    /*the window sends an evt to the agent/
     @Override
     public void onGuiEvent(GuiEvent evt) {
 
