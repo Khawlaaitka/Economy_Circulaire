@@ -50,12 +50,12 @@ public class LaunchSimu {
         for(int i=0; i<5; i++) {
             agents.append("repairCoffee~").append(i).append(":agents.RepairCoffeeAgent;");
         }
-        /**for(int i=0; i<4; i++) {
+        for(int i=0; i<4; i++) {
             agents.append("partStore~").append(i).append(":agents.PartStoreAgent;");
         }
         for(int i=0; i<3; i++) {
             agents.append("distributors~").append(i).append(":agents.DistributorAgent;");
-        }**/
+        }
         pp.setProperty(Profile.AGENTS, agents.toString());
         // create a default Profile
         var pMain = new ProfileImpl(pp);
